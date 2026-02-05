@@ -754,7 +754,7 @@ function DemographicsView({ data, sidebarOpen, setSidebarOpen }: any) {
                       contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
                       formatter={(value: any) => [value?.toLocaleString(), 'Enrolments']}
                     />
-                    <Bar dataKey="value" radius={[0, 6, 6, 0]} barSize={24} background={{ fill: '#f1f5f9', radius: [0, 6, 6, 0] }}>
+                    <Bar dataKey="value" radius={[0, 6, 6, 0] as any} barSize={24} background={{ fill: '#f1f5f9', radius: [0, 6, 6, 0] as any }}>
                       {
                         demographics.stateData.map((entry: any, index: number) => (
                           <Cell key={`cell-${index}`} fill={['#6366f1', '#8b5cf6', '#a855f7', '#d946ef', '#ec4899'][index % 5]} />
